@@ -35,6 +35,7 @@ const checkError = (err, req, res, next) => {
 
 app.post('/register', valid, (req, res) => {
     console.log(req.body)
+    res.send('Hello World')
 });
 
 app.use(checkError)
